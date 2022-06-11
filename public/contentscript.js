@@ -20,7 +20,6 @@ background-repeat:no-repeat;
       background-position-y: center;
       background-position-x: 10px;
 `;
-
 const innerElement = document.createElement('div');
 element.addEventListener(
   'mouseover',
