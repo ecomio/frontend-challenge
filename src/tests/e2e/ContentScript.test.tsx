@@ -17,7 +17,7 @@ describe("index.tsx", () => {
     await page.goto("http://localhost:3000/extension");
     await page.waitForSelector(".budget-btn");
     const text = await page.$eval(".budget-btn", (e:any) => e.textContent);
-    expect(text.trim()).toContain(" Budget-to-Beat: 351 €");
+    expect(text.trim()).toContain("Budget-to-Beat: 351 €");
   });
 
   afterAll(() => browser.close());
